@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @photographer.description %>
+</p>
+
+<p>
+  <strong>Extras:</strong>
+  <%= @photographer.extras %>
+</p>
+
+<p>
+  <strong>Pricing:</strong>
+  <%= @photographer.pricing %>
+</p>
+
+<%= link_to 'Edit', edit_photographer_path(@photographer) %> |
+<%= link_to 'Back', photographers_path %>
