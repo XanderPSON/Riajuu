@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.3.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -46,7 +46,6 @@ gem 'omniauth-facebook'
 #Heroku
 gem 'rails_12factor', group: :production
 gem 'puma'
-ruby "2.2.1"
 gem 'sprockets_better_errors'
 
 #Stlying
