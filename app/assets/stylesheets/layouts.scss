@@ -1,0 +1,17 @@
+.navbar-brand {
+	width: auto;
+	height: auto;
+}
+
+/*If navbar-fixed-top is used, adjust body padding*/
+body {
+	/*padding-top: 70px;*/
+}
+
+.jumbotron {
+	background-image: url('banner-couple.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 40em;
+	text-align: center;
+}
