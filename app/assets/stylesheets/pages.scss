@@ -1,3 +1,22 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbotron {
+	background-image: url('banner-couple.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 40em;
+	text-align: center;
+}
+
+.section-one {
+	background-color: pink;
+	text-align: center;
+}
+
+.section-two {
+	background-color: #eee;
+	text-align: center;
+}
+
+.section-three {
+	background-color: #ADD8E6;
+	text-align: center;
+}

@@ -8,10 +8,14 @@ body {
 	/*padding-top: 70px;*/
 }
 
-.jumbotron {
-	background-image: url('banner-couple.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 40em;
-	text-align: center;
+#copyright {
+	color: #666;
+	font-size: 1em;
+	line-height: 1em;
+	display: inline-block;
+	border-left: solid 1px rgba(0, 0, 0, 0.5);
+	padding: 0 0 0 1em;
+	margin: 0 0 0 1em;
+	font-size: 1em;
+	margin: 0;
 }
