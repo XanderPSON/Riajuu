@@ -30,18 +30,26 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
-					<li><button class="btn btn-default navbar-btn">Sign In</button></li>
+					<li><a href="#">Research</a></li>
+					<li><a href="#">A/B Testing</a></li>
+					<li><button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal">Sign In / Register</button></li>
 				</ul>
 			</div>
 
 		</div>
 	</nav>
 
-	<%= yield %>
+	<main>
+		<%= yield %>
+	</main>
 
 	<footer>
-		<div id="copyright">
-			&copy; XanderPSON. All rights reserved.
+		<div class="container-fluid">
+			<div class="footer">
+				<p>
+					&copy; XanderPSON. All rights reserved.
+				<p>	
+			</div>
 		</div>
 	</footer>
 
@@ -49,3 +57,7 @@
 
 </body>
 </html>
+
+<%= render "testmodal" %>
+
+<%= link_to "ModalTest", "#myModal", {"data-toggle" => "modal"} %>
