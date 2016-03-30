@@ -4,10 +4,7 @@ class CreateUsers < ActiveRecord::Migration
 
     	t.string :first_name
       t.string :last_name
-      t.string :city
-      t.string :state
       t.string :zip
-      t.string :country
 
       t.timestamps null: false
     end

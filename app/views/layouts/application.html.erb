@@ -14,7 +14,7 @@
 		<div class="container-fluid">
 		<!-- Brand & Toggle Group -->
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="/pages/home">
 					<%= image_tag("riajuu-logo-small.png", alt: "Riajuu Logo")%>
 				</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#riajuu-navbar-collapse-1" aria-expanded="false">
@@ -33,6 +33,7 @@
 					<li><a href="#">Research</a></li>
 					<li><a href="#">A/B Testing</a></li>
 					<li><button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal">Sign In / Register</button></li>
+					<li> <%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg' %></li>
 				</ul>
 			</div>
 
