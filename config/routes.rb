@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'pages/home'
+  get '/secret', to: 'pages#secret', as: :secret
 
   devise_for :users, controllers: {sessions: 'users/sessions'}
   resources :users

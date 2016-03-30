@@ -10,6 +10,14 @@
 </head>
 <body>
 
+	<div class="container">
+	  <% flash.each do |key, value| %>
+	    <div class="alert alert-<%= key %>">
+	      <%= value %>
+	    </div>
+	  <% end %>
+	</div>
+
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 		<!-- Brand & Toggle Group -->
@@ -28,16 +36,18 @@
 			<!-- Collect nav links, forms, etc. for toggling -->
 			<div class="collapse navbar-collapse" id="riajuu-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">Home</a></li>
+					<li class="active"><a href="/">Home</a></li>
+					<li><%= link_to "ModalTest", "#myModal", {"data-toggle" => "modal"} %></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Research</a></li>
 					<li><a href="#">A/B Testing</a></li>
 					<li><button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal">Sign In / Register Modal</button></li>
           <!-- Devise login -->
           <% if user_signed_in? %>
+          	<li><%= link_to 'Secret', secret_path %></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                <%= current_user.name %>
+                <%= current_user.first_name %>
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
@@ -75,5 +85,3 @@
 </html>
 
 <%= render "testmodal" %>
-
-<%= link_to "ModalTest", "#myModal", {"data-toggle" => "modal"} %>
