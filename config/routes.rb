@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
-  resources :pictures
-  resources :portfolios
   get 'pages/home'
 
-  devise_for :users
+  devise_for :users, controllers: {sessions: 'users/sessions'}
   resources :users
   resources :reviews
   resources :photographers
+  resources :pictures
+  resources :portfolios
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pages#home'
+  root to: 'pages#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
